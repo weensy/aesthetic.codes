@@ -44,7 +44,7 @@ const Layout = props => {
           </div>
           <div className="site-head-right">
             <div className="social-links">
-              <a
+              {/* <a
                 href="https://www.facebook.com"
                 title="Facebook"
                 target="_blank"
@@ -67,7 +67,15 @@ const Layout = props => {
                 rel="noopener noreferrer"
               >
                 RSS
-              </Link>
+              </Link> */}
+              <a
+                href="https://github.com/vaporwavy"
+                title="vaporwavy"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
             </div>
           </div>
         </div>
