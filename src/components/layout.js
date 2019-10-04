@@ -70,7 +70,7 @@ const Layout = props => {
               </Link> */}
               <a
                 href="https://github.com/vaporwavy"
-                title="vaporwavy"
+                title="GitHub"
                 target="_blank"
                 rel="noopener noreferrer"
               >
