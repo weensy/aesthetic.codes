@@ -1,9 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 
-const getTag = (i) => {
-  return tags.fields(i)
-}
 export default props => (
   <article>
     <Link to={props.node.fields.slug} className="post-list-link">
@@ -13,7 +10,7 @@ export default props => (
         </h2>
 
         <p>
-        #{getTag(i)}
+        #{props.node.frontmatter.tags(1)}
         </p>
         
       </div>
