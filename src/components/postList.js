@@ -1,6 +1,12 @@
 import React from "react"
 import { Link } from "gatsby"
 
+const getTag = (tags) => {
+  const listTag = []
+  tags.forEach((tag,i) => {
+    listTag.push(tag)
+  })
+}
 export default props => (
   <article>
     <Link to={props.node.fields.slug} className="post-list-link">
@@ -8,7 +14,7 @@ export default props => (
         <h2 className="post-list-title">
           {props.node.frontmatter.title || props.node.fields.slug}
         </h2>
-        <p>#{props.node.frontmatter.tags[1]} #{props.node.frontmatter.tags[2]}</p>
+        <p>#listTag[1]</p>
       </div>
     </Link>
   </article>
