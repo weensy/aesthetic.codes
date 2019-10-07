@@ -8,7 +8,7 @@ export default props => (
         <h2 className="post-list-title">
           {props.node.frontmatter.title || props.node.fields.slug}
         </h2>
-        <p>#{props.node.frontmatter.tag[1]} #{props.node.frontmatter.tag[2]} #{props.node.frontmatter.tag[3]}</p>
+        <p>#{props.node.frontmatter.tags[1]} #{props.node.frontmatter.tags[2]}</p>
       </div>
     </Link>
   </article>
