@@ -14,7 +14,7 @@ export default props => (
         <h2 className="post-list-title">
           {props.node.frontmatter.title || props.node.fields.slug}
         </h2>
-        <p>#listTag[1]</p>
+        <p>#{listTag[1]}</p>
       </div>
     </Link>
   </article>
