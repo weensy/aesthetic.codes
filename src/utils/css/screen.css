@@ -395,6 +395,10 @@ body {
     flex-wrap: wrap;
 }
 
+.post-list {
+    flex: 1 1 100%;
+}
+
 .post-card {
     position: relative;
     flex: 1 1 50%;
