@@ -65,9 +65,9 @@ const indexQuery = graphql`
             title
             description
             tags: [
-              tag1,
-              tag2,
-              tag3
+              "tag1",
+              "tag2",
+              "tag3"
             ]
             thumbnail {
               childImageSharp {
