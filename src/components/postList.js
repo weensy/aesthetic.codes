@@ -12,7 +12,7 @@ export default props => (
         {props.node.excerpt}
         </p>
         <p>
-        {props.node.fields.slug}
+        {props.node.fields.tags}
         </p>
         <p>
         {props.node.frontmatter.date}

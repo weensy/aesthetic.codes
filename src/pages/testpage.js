@@ -59,16 +59,13 @@ const indexQuery = graphql`
           excerpt
           fields {
             slug
+            tags
           }
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
             description
-            tags {
-              tag1
-              tag2
-              tag3
-            }
+            tags
             thumbnail {
               childImageSharp {
                 fluid(maxWidth: 1360) {
