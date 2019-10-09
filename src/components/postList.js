@@ -17,9 +17,6 @@ export default props => (
         <p>
         {props.node.frontmatter.date}
         </p>
-        <p>
-        {props.node.frontmatter.tags}
-        </p>
       </div>
     </Link>
   </article>
