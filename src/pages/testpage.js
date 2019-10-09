@@ -64,11 +64,11 @@ const indexQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
-            tags: [
-              "tag1",
-              "tag2",
-              "tag3"
-            ]
+            tags {
+              tag1
+              tag2
+              tag3
+            }
             thumbnail {
               childImageSharp {
                 fluid(maxWidth: 1360) {
