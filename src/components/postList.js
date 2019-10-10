@@ -13,7 +13,7 @@ export default props => (
         {props.node.excerpt}
         </p>
         <p>
-        {props.node.frontmatter.map(tag => (
+        {props.node.frontmatter.tags.map(tag => (
           {tag}
         ))}
         </p>
