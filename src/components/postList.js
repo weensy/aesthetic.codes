@@ -10,14 +10,13 @@ export default props => (
         <h2 className="post-card-title">
           {props.node.frontmatter.title || props.node.fields.slug}
         </h2>
-        <h3>
+        <h4>
           {props.node.excerpt}
-        </h3>
-        
+        </h4>  
       </div>
     </Link>
     <p>
-          {props.node.frontmatter.date}
+      {props.node.frontmatter.date}
     </p>
   </article>
 )
