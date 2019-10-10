@@ -10,13 +10,15 @@ class PostTags extends Component {
       <span>
         {tags &&
           tags.map(tag => (
+            <span>
             <Link
             key={tag}
             style={{ textDecoration: "none" }}
             to={`/tags/${_.kebabCase(tag)}`}
             >
-            #{tag}{" "}
+            #{tag}
             </Link>
+            {""}</span>
           ))}
       </span>
       // </div>
