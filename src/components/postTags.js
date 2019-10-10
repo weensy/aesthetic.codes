@@ -18,7 +18,7 @@ class PostTags extends Component {
             >
             #{tag}
             </Link>
-            {""}</span>
+            {" "}</span>
           ))}
       </span>
       // </div>
