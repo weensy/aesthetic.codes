@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "gatsby";
 
 class PostTags extends Component {
   render() {
@@ -7,8 +8,13 @@ class PostTags extends Component {
       <div className="post-tag-container">
         {tags &&
           tags.map(tag => (
-
-              <h2>{tag}</h2>
+            <Link
+            key={tag}
+            style={{ textDecoration: "none" }}
+            to={`/tags/${_.kebabCase(tag)}`}
+            >
+            #{tag}
+          </Link>
           ))}
       </div>
     );

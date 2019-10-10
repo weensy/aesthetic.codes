@@ -12,10 +12,7 @@ export default props => (
         <p>
         {props.node.excerpt}
         </p>
-        {/* <PostTags tags={props.node.frontmatter.tags} /> */}
-        {props.node.frontmatter.map(tag => (
-          <h3>#{tag}</h3>
-        ))}
+        <PostTags tags={props.node.frontmatter.tags} />
         <p>
         {props.node.frontmatter.date}
         </p>
