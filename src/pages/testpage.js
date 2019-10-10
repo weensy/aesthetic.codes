@@ -65,6 +65,7 @@ const indexQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            tags
             thumbnail {
               childImageSharp {
                 fluid(maxWidth: 1360) {

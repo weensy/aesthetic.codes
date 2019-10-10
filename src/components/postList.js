@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import testpage from "../pages/testpage"
 
 export default props => (
   <article className="post-list">
@@ -12,7 +13,9 @@ export default props => (
         {props.node.excerpt}
         </p>
         <p>
-        {props.node.fields.tags}
+        {props.node.frontmatter.map(tag => (
+          {tag}
+        ))}
         </p>
         <p>
         {props.node.frontmatter.date}
