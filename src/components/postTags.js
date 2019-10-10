@@ -9,6 +9,7 @@ class PostTags extends Component {
       <div className="post-tag-container">
         {tags &&
           tags.map(tag => (
+            <p>
             <Link
             key={tag}
             style={{ textDecoration: "none" }}
@@ -16,6 +17,7 @@ class PostTags extends Component {
             >
             #{tag}
           </Link>
+           </p>
           ))}
       </div>
     );
