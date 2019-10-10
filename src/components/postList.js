@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import testpage from "../pages/testpage"
 import PostTags from "../components/postTags"
 
 export default props => (
