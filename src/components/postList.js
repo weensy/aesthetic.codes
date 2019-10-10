@@ -6,13 +6,13 @@ export default props => (
   <article className="post-list">
     <Link to={props.node.fields.slug} className="post-list-link">
       <div className="post-list-content">
+        <PostTags tags={props.node.frontmatter.tags} />
         <h2 className="post-list-title">
           {props.node.frontmatter.title || props.node.fields.slug}
         </h2>
-        <p>
+        <h3>
         {props.node.excerpt}
-        </p>
-        <PostTags tags={props.node.frontmatter.tags} />
+        </h3>
         <p>
         {props.node.frontmatter.date}
         </p>
