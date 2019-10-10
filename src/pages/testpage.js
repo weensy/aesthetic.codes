@@ -59,7 +59,6 @@ const indexQuery = graphql`
           excerpt
           fields {
             slug
-            tags
           }
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
