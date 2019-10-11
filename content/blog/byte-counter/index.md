@@ -1,7 +1,7 @@
 ---
 title: "Byte Counter"
-tags: [byte,count,utf-8]
 date: "2019-09-20"
+tags: [byte,count,utf-8]
 ---
 
 This can count bytes of string.
