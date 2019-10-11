@@ -14,9 +14,9 @@ export default props => (
       <p>
         {props.node.excerpt}
       </p>
-      <p>
-      {props.node.frontmatter.date}
-    </p>
+      <span>
+        {props.node.frontmatter.date}
+      </span>
     </div>
   </article>
 )
