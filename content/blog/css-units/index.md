@@ -4,9 +4,8 @@ date: "2019-10-15T04:33:00.000Z"
 tags: [graphql,facebook,query]
 ---
 
-Absolute Lengths
-The absolute length units are fixed and a length expressed in any of these will appear as exactly that size.
-
+### Absolute Lengths
+The absolute length units are fixed and a length expressed in any of these will appear as exactly that size.  
 Absolute length units are not recommended for use on screen, because screen sizes vary so much. However, they can be used if the output medium is known, such as for print layout.
 
 <table>
@@ -44,7 +43,7 @@ Absolute length units are not recommended for use on screen, because screen size
   </tbody>
 </table>
 
-Relative Lengths
+### Relative Lengths
 Relative length units specify a length relative to another length property. Relative length units scales better between different rendering mediums.
 
 <table>
@@ -94,5 +93,5 @@ Relative length units specify a length relative to another length property. Rela
   </tbody>
 </table>
 
-Reference
+Reference:  
 https://www.w3schools.com/cssref/css_units.asp
