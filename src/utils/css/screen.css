@@ -393,6 +393,10 @@ body {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    
+}
+
+.post-feed-list{
     /* justify-content: center; */
     flex-direction: column;
 }

@@ -28,7 +28,7 @@ const BlogIndex = ({ data }, location) => {
           </h2>
         </header>
       )}
-      <div className="post-feed">
+      <div className="post-feed post-feed-list">
         {posts.map(({ node }) => {
           postCounter++
           return (
