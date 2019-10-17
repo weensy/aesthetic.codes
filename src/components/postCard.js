@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import Tags from "../components/tags"
 
 export default props => (
   <article
@@ -14,6 +15,7 @@ export default props => (
       }
     }
   >
+    <div className="post-card-content"><Tags tags={props.node.frontmatter.tags}/></div>
     <Link to={props.node.fields.slug} className="post-card-link">
       <div className="post-card-content">
         <h2 className="post-card-title">
@@ -21,5 +23,10 @@ export default props => (
         </h2>
       </div>
     </Link>
+    <div className="post-card-content">{props.node.frontmatter.description || props.node.excerpt}</div>
+    <Link to={props.node.fields.slug} className="post-card-link">
+      <div>Read more</div>
+    </Link>
+    <div>{props.node.frontmatter.date}</div>
   </article>
 )
