@@ -25,7 +25,11 @@ export default props => (
     {props.node.frontmatter.date}
     {props.node.frontmatter.description || props.node.excerpt}
     <Link to={props.node.fields.slug} className="post-card-link">
-      {(props.node.frontmatter.description || props.node.expert) && "Read more"}
+      {
+        props.node.frontmatter.description || props.node.excerpt
+          ?("Read more")
+          :(null)
+      }
     </Link>
     </div>
     
