@@ -17,7 +17,7 @@ export default props => (
   >
       {
         props.node.frontmatter.thumbnail
-          ?(<ContentNoImage/>)
+          ?(<ContentNoImage props={props}/>)
           :(null)
       }
     
@@ -39,6 +39,7 @@ export default props => (
 
 class ContentNoImage extends Component {
   render() {
+    const{props}=this.props;
     return (
       <div className="post-card-content">
       <Tags tags={props.node.frontmatter.tags}/>
