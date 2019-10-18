@@ -9,7 +9,7 @@ And it is better than vlookup.
 
 ### Function Index
 ```
-INDEX(array, row_num, [column\_num])
+INDEX(array, row_num, [column_num])
 ```
 * A range of cells or an array constant.
 * Selects the row in array from which to return a value.
@@ -20,7 +20,7 @@ Returns the value of an element in a table or an array, selected by the row and 
 
 ### Function Match
 ```
-MATCH(lookup\_value, lookup_array, [match\_type])
+MATCH(lookup_value, lookup_array, [match_type])
 ```
 * lookup\_value: The value that you want to match in lookup\_array.
 * lookup\_array: The range of cells being searched.
