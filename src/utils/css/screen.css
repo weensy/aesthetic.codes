@@ -443,7 +443,7 @@ body {
 .post-card-content {
     flex: 1 1 auto;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     position: absolute;
     top: 0;
