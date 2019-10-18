@@ -1,4 +1,4 @@
-import React from "react"
+import React, { Component } from "react";
 import { Link } from "gatsby"
 import Tags from "../components/tags"
 
@@ -15,7 +15,7 @@ export default props => (
       }
     }
   >
-    <div className="post-card-content-test">
+    <div className="post-card-content">
     <Tags tags={props.node.frontmatter.tags}/>
     <Link to={props.node.fields.slug} className="post-card-link">
         <h2 className="post-card-title">
@@ -25,10 +25,10 @@ export default props => (
     {props.node.frontmatter.date}
     {props.node.frontmatter.description || props.node.excerpt}
     <Link to={props.node.fields.slug} className="post-card-link">
-      Read more
+      {props.node.frontmatter.description && props.node.expert && "Read more"}
     </Link>
-    
     </div>
+    
     {/* <div className=""><Tags tags={props.node.frontmatter.tags}/></div>
     <Link to={props.node.fields.slug} className="post-card-link">
       <div className="post-card-content">
