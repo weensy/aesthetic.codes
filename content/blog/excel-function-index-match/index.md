@@ -27,14 +27,14 @@ MATCH(lookup_value, lookup_array, [match_type])
 * match_type: -1, 0, or 1. The match_type argument specifies how Excel matches values. Default value is 1.
 
 ##### match_type
-- 1: values in lookup_array <= lookup_value
-- 0: values in lookup_array = lookup_value
-- -1: values in lookup_array >= lookup_value
+* 1: values in lookup_array <= lookup_value
+* 0: values in lookup_array = lookup_value
+* -1: values in lookup_array >= lookup_value
 
 ##### Retern
 MATCH returns the position of the matched value within lookup_array, not the value itself.  
 If MATCH is unsuccessful in finding a match, it returns the #N/A error value.
 
 ##### String search
-- MATCH does not distinguish between uppercase and lowercase letters when matching text values.
-- If match_type is 0 and lookup_value is a text string, you can use the wildcard characters — the question mark (?) and asterisk (*) — in the lookup_value argument. A question mark matches any single character; an asterisk matches any sequence of characters. If you want to find an actual question mark or asterisk, type a tilde (~) before the character.
+* MATCH does not distinguish between uppercase and lowercase letters when matching text values.
+* If match_type is 0 and lookup_value is a text string, you can use the wildcard characters — the question mark (?) and asterisk (*) — in the lookup_value argument. A question mark matches any single character; an asterisk matches any sequence of characters. If you want to find an actual question mark or asterisk, type a tilde (~) before the character.
