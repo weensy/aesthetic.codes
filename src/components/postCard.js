@@ -15,23 +15,11 @@ export default props => (
       }
     }
   >
-    <div className="post-card-content">
-    <Tags tags={props.node.frontmatter.tags}/>
-    <Link to={props.node.fields.slug} className="post-card-link">
-        <h2 className="post-card-title">
-          {props.node.frontmatter.title || props.node.fields.slug}
-        </h2>
-    </Link>
-    {props.node.frontmatter.date}
-    {props.node.frontmatter.description || props.node.excerpt}
-    <Link to={props.node.fields.slug} className="post-card-link">
       {
-        props.node.frontmatter.description || props.node.excerpt
-          ?("Read more")
+        props.node.frontmatter.thumbnail
+          ?(<ContentNoImage/>)
           :(null)
       }
-    </Link>
-    </div>
     
     {/* <div className=""><Tags tags={props.node.frontmatter.tags}/></div>
     <Link to={props.node.fields.slug} className="post-card-link">
@@ -48,3 +36,27 @@ export default props => (
     <div>{props.node.frontmatter.date}</div> */}
   </article>
 )
+
+class ContentNoImage extends Component {
+  render() {
+    return (
+      <div className="post-card-content">
+      <Tags tags={props.node.frontmatter.tags}/>
+      <Link to={props.node.fields.slug} className="post-card-link">
+        <h2 className="post-card-title">
+          {props.node.frontmatter.title || props.node.fields.slug}
+        </h2>
+      </Link>
+      {props.node.frontmatter.date}
+      {props.node.frontmatter.description || props.node.excerpt}
+      <Link to={props.node.fields.slug} className="post-card-link">
+        {
+          props.node.frontmatter.description || props.node.excerpt
+            ?("Read more")
+            :(null)
+        }
+      </Link>
+      </div>
+    );
+  }
+}

@@ -37,4 +37,4 @@ If MATCH is unsuccessful in finding a match, it returns the \#N/A error value.
 
 ##### String search
 * MATCH does not distinguish between uppercase and lowercase letters when matching text values.
-* If match_type is 0 and lookup_value is a text string, you can use the wildcard characters — the question mark (?) and asterisk (\*) — in the lookup_value argument. A question mark matches any single character; an asterisk matches any sequence of characters. If you want to find an actual question mark or asterisk, type a tilde (~) before the character.
+* If match\_type is 0 and lookup\_value is a text string, you can use the wildcard characters — the question mark (?) and asterisk (\*) — in the lookup_value argument. A question mark matches any single character; an asterisk matches any sequence of characters. If you want to find an actual question mark or asterisk, type a tilde (~) before the character.
