@@ -14,7 +14,11 @@ tags: [javascript,logical-operators,syntax]
   <tbody>
     <tr>
       <td>Logical AND</td>
-      <td>```expr1 && expr2```</td>
+      <td>
+      ```
+      expr1 && expr2
+      ```
+      </td>
       <td>If expr1 can be converted to true, returns expr2; else, returns expr1.</td>
     </tr>
     <tr>
