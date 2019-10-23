@@ -1,5 +1,5 @@
 ---
-title: "Excel - Function Index-Match"
+title: "Function Index-Match in Excel"
 date: "2019-10-18T03:11:00.000Z"
 tags: [excel,function,index-match]
 ---
