@@ -14,7 +14,7 @@ tags: [javascript,logical-operators,syntax]
   <tbody>
     <tr>
       <td>Logical AND</td>
-      <td>expr1 && expr2</td>
+      <td>```expr1 && expr2```</td>
       <td>If expr1 can be converted to true, returns expr2; else, returns expr1.</td>
     </tr>
     <tr>
@@ -30,12 +30,12 @@ tags: [javascript,logical-operators,syntax]
   </tbody>
 </table>
 
-Examples of expressions that can be converted to false are:
+##### Examples of expressions that can be converted to false are:
 * null;
 * NaN;
 * 0;
 * empty string ("" or '' or ``);
 * undefined.
 
-Operator precedence:
+##### Operator precedence:
 * && > ||
