@@ -7,9 +7,11 @@
 
     /* Colours */
     --color-primary: #3eb0ef;
-    --color-base: #131313;
+    /* --color-base: #131313; */
+    --color-base: #ffffff;
     --color-border: #ddd;
-    --color-bg: #f8f8f8;
+    /* --color-bg: #f8f8f8; */
+    --color-bg: #000000;
 
     /* Fonts */
     --font-sans-serif: 'Muli', sans-serif;

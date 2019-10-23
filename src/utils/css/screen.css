@@ -26,6 +26,7 @@ production stylesheet in assets/built/screen.css using gulp dev
 
 body {
     font-family: 'Muli', sans-serif;
+    /* font-family: 'Inter', sans-serif; */
     background: var(--color-bg);
     transition: background 0.3s ease-out;
     transition-delay: 0.25;
@@ -342,7 +343,8 @@ body {
     }
 
     .site-head-open {
-        background: rgba(255,255,255,1);
+        /* background: rgba(255,255,255,1); */
+        background: rgba(0,0,0,1);
         transition: background 0.5s ease-out;
         transition-delay: 0.25;
         overflow: hidden;
@@ -402,7 +404,7 @@ body {
 }
 
 .post-list {
-    /* flex: 1 1 50%; */
+    flex: 1 1 50%;
     position: relative;
     display: flex;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
@@ -443,7 +445,7 @@ body {
 .post-card-content {
     flex: 1 1 auto;
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     justify-content: center;
     position: absolute;
     top: 0;
