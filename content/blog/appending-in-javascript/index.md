@@ -1,5 +1,5 @@
 ---
-title: "JavaScript - Appending"
+title: "Appending in JavaScript"
 date: "2019-09-13"
 tags: [javascript,append,textnode]
 ---
