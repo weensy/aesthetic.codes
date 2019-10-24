@@ -11,7 +11,7 @@ class Tags extends Component {
         {tags &&
           tags.map(tag => (
             <span>
-            <Link
+            <Link className="testing"
             key={tag}
             style={{ textDecoration: "none" }}
             to={`/tags/${_.kebabCase(tag)}`}

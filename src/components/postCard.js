@@ -38,7 +38,7 @@ class ContentNoImage extends Component {
           </h2>
         </Link>
         </div>
-        <div>
+        <div className="testing">
         {props.node.frontmatter.date}
         </div>
         <div>

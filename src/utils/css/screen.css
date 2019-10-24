@@ -344,7 +344,7 @@ body {
 
     .site-head-open {
         /* background: rgba(255,255,255,1); */
-        background: rgba(0,0,0,1);
+        background: rgba(11,11,11,1);
         transition: background 0.5s ease-out;
         transition-delay: 0.25;
         overflow: hidden;
@@ -452,7 +452,7 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    color: #fff;
+    color: var(--color-base);
     background: rgba(0,0,0,0.1);
     opacity: 1;
     transition: opacity 0.5s cubic-bezier(.33,0,.2,1);
@@ -500,11 +500,15 @@ body {
     align-items: flex-start;
     padding: 4vw;
 }
+.testing {
+    color: #aaaaaa;
+}
 
 .post-card.no-image .post-card-title {
     font-size: 5rem;
     line-height: 1.15em;
     text-align: left;
+    color: var(--color-base);
 }
 
 .post-card.no-image:hover .post-card-title {
