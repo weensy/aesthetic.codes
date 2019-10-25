@@ -7,20 +7,20 @@ class Tags extends Component {
     const { tags } = this.props;
     return (
       // <div className="post-tag-container">
-      <span>
+      <div>
         {tags &&
           tags.map(tag => (
             <span>
             <Link className="testing"
             key={tag}
-            style={{ textDecoration: "none" }}
+            // style={{ textDecoration: "none" }}
             to={`/tags/${_.kebabCase(tag)}`}
             >
             #{tag}
             </Link>
             {" "}</span>
           ))}
-      </span>
+      </div>
       // </div>
     );
   }
