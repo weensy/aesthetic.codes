@@ -34,7 +34,7 @@ tags: [javascript,logical-operators,syntax]
 * null;
 * NaN;
 * 0;
-* empty string ("" or '' or ``);
+* empty string ("" or '' or \`\`);
 * undefined.
 
 ##### Operator precedence:
