@@ -466,6 +466,7 @@ cccccc
 .post-card-date,
 .post-card-body,
 .post-card-tag-link{
+    font-size: 1.4rem;
     color: #aaaaaa;
 }
 .post-card.with-image .post-card-content {
