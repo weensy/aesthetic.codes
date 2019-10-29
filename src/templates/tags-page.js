@@ -4,49 +4,37 @@ import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import PostCard from "../components/postCard"
 
 class TagsPageTemplate extends React.Component {
   render() {
-    const post = this.props.data.markdownRemark
+    const props = this.props
+    const tag = this.props.pageContext.tag
+    const posts = this.props.data.allMarkdownRemark.edges
     const siteTitle = this.props.data.site.siteMetadata.title
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
-          title={post.frontmatter.title}
-          description={post.frontmatter.description || post.excerpt}
+          // title={`#${tag}`}
+          title={`#${tag.charAt(0).toUpperCase() + tag.slice(1)}`}
+          keywords={[`${tag}`, `blog`, `gatsby`, `javascript`, `react`]}
         />
-        <article
-          className={`post-content ${post.frontmatter.thumbnail || `no-image`}`}
-        >
-          {siteTitle}
-          {/* <header className="post-content-header">
-            <h1 className="post-content-title">{post.frontmatter.title}</h1>
-          </header>
-
-          {post.frontmatter.description && (
-            <p class="post-content-excerpt">{post.frontmatter.description}</p>
-          )}
-
-          {post.frontmatter.thumbnail && (
-            <div className="post-content-image">
-              <Img
-                className="kg-image"
-                fluid={post.frontmatter.thumbnail.childImageSharp.fluid}
-                alt={post.frontmatter.title}
-              />
-            </div>
-          )}
-
-          <div
-            className="post-content-body"
-            dangerouslySetInnerHTML={{ __html: post.html }}
-          />
-
-          <footer className="post-content-footer">
-          </footer> */}
-        </article>
-      </Layout>
+        <div><h1>#{tag}({props.data.allMarkdownRemark.totalCount})</h1></div>
+      <div className="post-feed">
+        {posts.map(({ node }) => {
+          // postCounter++
+          return (
+            <PostCard
+              key={node.fields.slug}
+              // count={postCounter}
+              node={node}
+              postClass={`post`}
+            />
+          )
+        })}
+      </div>
+    </Layout>
     )
   }
 }
@@ -61,22 +49,25 @@ export const pageQuery = graphql`
         author
       }
     }
-    markdownRemark(frontmatter: { tags: { in: [$tag] } }) {
-      id
-      excerpt(pruneLength: 160)
-      fields {
-        slug
-      }
-      html
-      frontmatter {
-        title
-        date(formatString: "MMMM DD, YYYY")
-        description
-        tags
-        thumbnail {
-          childImageSharp {
-            fluid(maxWidth: 1360) {
-              ...GatsbyImageSharpFluid
+    allMarkdownRemark(filter: { frontmatter: { tags: { in: [$tag] } } }, sort: { fields: [frontmatter___date], order: DESC }) {
+      totalCount
+      edges {
+        node {
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+            description
+            tags
+            thumbnail {
+              childImageSharp {
+                fluid(maxWidth: 1360) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
             }
           }
         }
