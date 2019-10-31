@@ -20,7 +20,9 @@ class TagsPageTemplate extends React.Component {
           title={`#${tag.charAt(0).toUpperCase() + tag.slice(1)}`}
           keywords={[`${tag}`, `blog`, `gatsby`, `javascript`, `react`]}
         />
-        <div><h1>#{tag}({props.data.allMarkdownRemark.totalCount})</h1></div>
+        <header className="post-content-header">
+          <h1 className="post-content-title">#{tag}({props.data.allMarkdownRemark.totalCount})</h1>
+        </header>
       <div className="post-feed">
         {posts.map(({ node }) => {
           // postCounter++

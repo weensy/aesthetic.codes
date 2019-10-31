@@ -16,7 +16,7 @@ tags: [git,proxy,vscode]
 3. Check your proxy address
 
 ### Configure git
-```
+```bash
 git config --global http.proxy <your proxy address>
 git config --global https.proxy <your proxy address>
 ```

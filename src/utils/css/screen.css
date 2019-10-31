@@ -26,7 +26,6 @@ production stylesheet in assets/built/screen.css using gulp dev
 
 body {
     font-family: 'Muli', sans-serif;
-    /* font-family: 'Inter', sans-serif; */
     background: var(--color-bg);
     transition: background 0.3s ease-out;
     transition-delay: 0.25;
@@ -469,6 +468,11 @@ cccccc
     font-size: 1.4rem;
     color: #aaaaaa;
 }
+
+.post-card-date{
+    font-style: italic;
+}
+
 .post-card.with-image .post-card-content {
     opacity: 0;
 }

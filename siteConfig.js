@@ -1,9 +1,9 @@
 module.exports = {
-  name: 'vaporwavy',
-  shortName: 'vaporwavy',
+  name: 'Vaporwavy',
+  shortName: 'Vaporwavy',
   description: '',
   url: 'https://vaporwavy.netlify.com', // Domain of your site without prefix!
   prefix: '/',
-  author: 'vaporwavy',
+  author: 'Vaporwavie',
   twitter: ''
 }
