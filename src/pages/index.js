@@ -3,6 +3,7 @@ import { graphql, StaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+// import Bio from "../components/bio"
 import PostCard from "../components/postCard"
 
 // import "../utils/global.scss"
