@@ -413,7 +413,6 @@ body {
     flex: 1 1 50%;
     display: flex;
     height: 35vw;
-    
     /* background: linear-gradient(135deg, #1f1f1f 0%, #111 100%) center center; */
     /* based #1d1d1f */
     background: linear-gradient(135deg, #242426 0%, #161618 100%) center center;
@@ -458,7 +457,7 @@ body {
 .post-card-body,
 .post-card-tag-link{
     font-size: 1.4rem;
-    color: #aaaaaa;
+    color: var(--color-sub-base);
 }
 
 .post-card-date{
@@ -610,7 +609,8 @@ body {
 .post-content-body blockquote {
     margin: 0 0 1.5em;
     padding: 0 1.5em;
-    border-left: #3eb0ef 3px solid;
+    /* border-left: #3eb0ef 3px solid; */
+    border-left: var(--color-primary) 3px solid;
 }
 
 .post-content-body blockquote p {
@@ -631,7 +631,7 @@ body {
     line-height: 1em;
     font-weight: 400!important;
     /* background: var(--color-bg); */
-    background: var(--color-bg-dark);
+    background: var(--color-bg-dark) !important;
     border-radius: 3px;
 }
 
@@ -645,13 +645,13 @@ body {
     padding: 20px;
     max-width: 100%;
     /* border: color(var(--color-base) l(-10%)) 1px solid; */
-    border: color(var(--color-bg-bright) l(-0%)) 1px solid;
+    border: color(var(--color-bg-bright) l(-0%)) 1px solid !important; 
     /* color: var(--color-bg); */
     color: var(--color-base);
     font-size: 1.4rem;
     line-height: 1.5em;
     /* background: color(var(--color-base) l(-3%)); */
-    background: var(--color-bg-dark);
+    background: var(--color-bg-dark) !important;
     border-radius: 5px;
 }
 

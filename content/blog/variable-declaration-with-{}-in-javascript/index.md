@@ -8,12 +8,14 @@ It is one of syntax in "destructuring assignment" in JavaScript ES6.
 
 ### For example
 You can rewrite this.
-```
+```javascript
 const title = post.title
 const date = post.date
 const tags = post.tags
 ```
 As this.
-```
+```javascript
 const { title, date, tags } = post
 ```
+
+`test`
