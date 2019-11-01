@@ -515,9 +515,6 @@ cccccc
     align-items: flex-start;
     padding: 4vw;
 }
-.testing {
-    color: #aaaaaa;
-}
 
 .post-card.no-image .post-card-title {
     font-size: 5rem;
@@ -640,7 +637,8 @@ cccccc
     font-size: 0.8em;
     line-height: 1em;
     font-weight: 400!important;
-    background: var(--color-bg);
+    /* background: var(--color-bg); */
+    background: var(--color-bg-dark);
     border-radius: 3px;
 }
 
@@ -653,11 +651,14 @@ cccccc
     margin: 1.5em 0 3em;
     padding: 20px;
     max-width: 100%;
-    border: color(var(--color-base) l(-10%)) 1px solid;
-    color: var(--color-bg);
+    /* border: color(var(--color-base) l(-10%)) 1px solid; */
+    border: color(var(--color-bg-bright) l(-0%)) 1px solid;
+    /* color: var(--color-bg); */
+    color: var(--color-base);
     font-size: 1.4rem;
     line-height: 1.5em;
-    background: color(var(--color-base) l(-3%));
+    /* background: color(var(--color-base) l(-3%)); */
+    background: var(--color-bg-dark);
     border-radius: 5px;
 }
 
