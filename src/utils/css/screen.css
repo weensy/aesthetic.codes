@@ -629,10 +629,10 @@ body {
     padding: 0 5px 2px;
     font-size: 0.8em;
     line-height: 1em;
-    font-weight: 400!important;
+    font-weight: 400 !important;
     /* background: var(--color-bg); */
     background: var(--color-bg-dark) !important;
-    border-radius: 3px;
+    border-radius: 3px !important;
 }
 
 .post-content-body p code {

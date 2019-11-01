@@ -17,5 +17,3 @@ As this.
 ```javascript
 const { title, date, tags } = post
 ```
-
-`test`
