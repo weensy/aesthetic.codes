@@ -18,6 +18,11 @@
     --color-bg-bright:#1d1d1f;
     --color-bg-dark:#000;
 
+    --color1:#66bbff;
+    --color2:#cccccc;
+    --color3:#63636e;
+    --color4:#252429;
+
     /* Fonts */
     --font-sans-serif: 'Muli', sans-serif;
     --font-serif: Georgia, Times, serif;

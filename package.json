@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-london",
+  "name": "gatsby-dark-london",
   "private": true,
   "description": "A custom, image-centric theme for Gatsby",
   "version": "1.0.0",
-  "author": "Imed Adel <aadelimed@gmail.com>",
+  "author": "Vaporwavie <i@ttv8.me>",
   "bugs": {
-    "url": "https://github.com/ImedAdel/gatsby-london/issues"
+    "url": "https://github.com/vaporwavy/gatsby-dark-london/issues"
   },
   "dependencies": {
     "gatsby": "^2.4.2",
@@ -58,7 +58,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ImedAdel/gatsby-london.git"
+    "url": "git+https://github.com/vaporwavy/gatsby-dark-london.git"
   },
   "scripts": {
     "build": "gatsby build",
