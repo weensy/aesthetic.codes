@@ -5,4 +5,4 @@ import "typeface-nunito"
 import "typeface-alegreya"
 
 // prism.js theme
-require("prismjs/themes/prism-okaidia.css")
+require("./src/utils/css/components/prism-okaidia.css")
