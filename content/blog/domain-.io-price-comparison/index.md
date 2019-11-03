@@ -1,18 +1,32 @@
 ---
-title: Domain ".io" Price comparison - Draft -
+title: Domain ".io" Price comparison
 date: "2019-10-31"
 tags: [domain,price,comparison]
 ---
-#### Namecheap
+#### 1. Namecheap
 https://www.namecheap.com
-#### GoDaddy
+![Namecheap](./namecheap.png)
+#### 2. GoDaddy
 https://www.godaddy.com
-#### 1&1 IONOS
+![GoDaddy](./godaddy.png)
+#### 3. 1&1 IONOS
 https://www.ionos.com
-#### Gandi
+![IONOS](./ionos.png)
+#### 4. Gandi
 https://www.gandi.net
-#### Porkbun
+![Gandi](./gandi.png)
+#### 5. Porkbun
 https://porkbun.com
+![Porkbun](./porkbun.png)
+
+#### Compare price of .io + .com
+|         |First year|Retail|
+|---------|---------:|-----:|
+|Namecheap|$34.76    |$43.86|
+|GoDaddy  |$56.98    |$77.98|
+|IONOS    |$36.00    |$65.00|
+|Gandi    |$39.00    |$53.50|
+|Porkbun  |<span style="font-weight: bold; background-color: #ff9f0a; color: #111111;">$32.97</span>|<span style="font-weight: bold; background-color: #ff9f0a; color: #111111;">$37.53</span>|
 
 ### Conclusion
-This time, the best way is to buy from ***Namecheap***. After 1 year, move to ***Porkbun***.
+This time, the best way is to buy from ***Porkbun***.
