@@ -15,13 +15,24 @@
     --color-sub-base: #aaa;
     --color-border: #d2d2d7;
     --color-bg: #111111;
-    --color-bg-bright:#1d1d1f;
-    --color-bg-dark:#000;
+    --color-bg-bright: #1d1d1f;
+    --color-bg-dark: #000;
 
-    --color-spare1:#66bbff;
-    --color-spare2:#cccccc;
-    --color-spare3:#63636e;
-    --color-spare4:#252429;
+    --color-spare1: #66bbff;
+    --color-spare2: #cccccc;
+    --color-spare3: #63636e;
+    --color-spare4: #252429;
+    
+    /* Apple Dark Appearance System Color*/
+    --color-apple-blue: rgb(10,132,255);
+    --color-apple-brown: rgb(172,142,104);
+    --color-apple-gray: rgb(152,152,157);
+    --color-apple-green: rgb(50,215,75);
+    --color-apple-orange: rgb(255,159,10);
+    --color-apple-pink: rgb(255,55,95);
+    --color-apple-purple: rgb(191,90,242);
+    --color-apple-red: rgb(255,69,58);
+    --color-apple-yellow: rgb(255,214,10);
 
     /* Fonts */
     --font-sans-serif: 'Muli', sans-serif;

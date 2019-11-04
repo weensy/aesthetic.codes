@@ -455,12 +455,21 @@ body {
 
 .post-card-date,
 .post-card-body,
-.post-card-tag-link{
-    font-size: 1.4rem;
+.post-card-tag-link {
+    font-size: 1.6rem;
     color: var(--color-sub-base);
 }
 
-.post-card-date{
+.post-card-readmore {
+    margin-top: 11.2px;
+    font-size: 1.6rem;
+}
+
+.post-card-body {
+    margin-top: 16.8px;
+}
+.post-card-date {
+    margin-top: 10px;
     font-style: italic;
 }
 
@@ -482,7 +491,7 @@ body {
     margin: 0;
     display: inline-block;
     font-size: 3.4rem;
-    max-width: 70%;
+    /* max-width: 70%; */
     text-align: center;
     transition: all 0.3s cubic-bezier(.33,0,.2,1);
 }
@@ -522,6 +531,12 @@ body {
 @media (max-width: 1200px) {
     .post-card.no-image .post-card-title {
         font-size: 3.4rem;
+    }
+    .post-card.no-image .post-card-date,
+    .post-card.no-image .post-card-body,
+    .post-card.no-image .post-card-tag-link,
+    .post-card.no-image .post-card-readmore{
+        font-size: 1.4rem;
     }
 }
 @media (max-width: 700px) {

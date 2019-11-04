@@ -27,7 +27,7 @@ class ContentNoImage extends Component {
   render() {
     const{props}=this.props;
     return (
-      <div className="post-card-content post-feed-list">
+      <div className="post-card-content">
         <div>
         <Tags tags={props.node.frontmatter.tags}/>
         </div>
@@ -45,7 +45,7 @@ class ContentNoImage extends Component {
         {props.node.frontmatter.description || props.node.excerpt}
         </div>
         <div>
-        <Link to={props.node.fields.slug} className="post-card-link">
+        <Link to={props.node.fields.slug} className="post-card-link post-card-readmore">
           {
             props.node.frontmatter.description || props.node.excerpt
               ?("Read more")
