@@ -534,14 +534,33 @@ body {
     }
     .post-card.no-image .post-card-date,
     .post-card.no-image .post-card-body,
-    .post-card.no-image .post-card-tag-link,
-    .post-card.no-image .post-card-readmore{
+    .post-card.no-image .post-card-readmore,
+    .post-card.no-image .post-card-tag-link{
         font-size: 1.4rem;
+    }
+}
+@media (max-width: 940px) {
+    .post-card.no-image .post-card-date,
+    .post-card.no-image .post-card-body,
+    .post-card.no-image .post-card-readmore{
+        display: none;
     }
 }
 @media (max-width: 700px) {
     .post-card.no-image:before {
         font-size: 50vw;
+    }
+    .post-card.no-image .post-card-date,
+    .post-card.no-image .post-card-body,
+    .post-card.no-image .post-card-readmore{
+        display: block;
+    }
+}
+@media (max-width: 430px) {
+    .post-card.no-image .post-card-date,
+    .post-card.no-image .post-card-body,
+    .post-card.no-image .post-card-readmore{
+        display: none;
     }
 }
 
