@@ -72,7 +72,7 @@ body {
     text-align: center;
 }
 
-.tags-page-head {
+.tag-page-head {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -469,6 +469,7 @@ body {
 .post-card-body {
     margin-top: 16.8px;
 }
+
 .post-card-date {
     margin-top: 10px;
     font-style: italic;

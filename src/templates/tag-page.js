@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PostCard from "../components/postCard"
 
-class TagsPageTemplate extends React.Component {
+class TagPageTemplate extends React.Component {
   render() {
     const props = this.props
     const tag = this.props.pageContext.tag
@@ -19,16 +19,14 @@ class TagsPageTemplate extends React.Component {
           title={`#${tag.charAt(0).toUpperCase() + tag.slice(1)}`}
           keywords={[`${tag}`, `blog`, `gatsby`, `javascript`, `react`]}
         />
-        <header className="tags-page-head">
+        <header className="tag-page-head">
           <h1 className="page-head-title">#{tag}({props.data.allMarkdownRemark.totalCount})</h1>
         </header>
       <div className="post-feed">
         {posts.map(({ node }) => {
-          // postCounter++
           return (
             <PostCard
               key={node.fields.slug}
-              // count={postCounter}
               node={node}
               postClass={`post`}
             />
@@ -40,10 +38,10 @@ class TagsPageTemplate extends React.Component {
   }
 }
 
-export default TagsPageTemplate
+export default TagPageTemplate
 
 export const pageQuery = graphql`
-  query PostByTags($tag: String!) {
+  query PostByTag($tag: String!) {
     site {
       siteMetadata {
         title
