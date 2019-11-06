@@ -11,7 +11,7 @@ import "../utils/css/screen.css"
 
 const TagIndex = ({ data }) => {
   const siteTitle = data.site.siteMetadata.title
-  const tags = data.allMarkdownRemark.distinct
+  const posts = data.allMarkdownRemark.edges
 
   return (
     <Layout title={siteTitle}>
@@ -19,19 +19,19 @@ const TagIndex = ({ data }) => {
         title="Tags"
         keywords={[`devlog`, `blog`, `gatsby`, `javascript`, `react`]}
       />
-      {data.site.siteMetadata.description && (
+      {/* {data.site.siteMetadata.description && (
         <header className="page-head">
           <h2 className="page-head-title">
             {data.site.siteMetadata.description}
           </h2>
         </header>
-      )}
+      )} */}
       <div className="post-feed">
-        {tags.map(tag => {
-          const asdf=usequery(countQuery, {variables: { tag }});
+      {posts.map(({ node }) => {
+          
           return (
+            node.frontmatter.tags
               
-            asdf
           )
         })}
       </div>
@@ -46,8 +46,28 @@ const indexQuery = graphql`
         title
       }
     }
-    allMarkdownRemark {
-      distinct(field: frontmatter___tags)
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      edges {
+        node {
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM D, YYYY")
+            title
+            description
+            tags
+            thumbnail {
+              childImageSharp {
+                fluid(maxWidth: 1360) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 `
