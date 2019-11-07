@@ -1,4 +1,6 @@
 import React from "react"
+import _ from "lodash";
+import { Link } from "gatsby";
 import { graphql, StaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
@@ -11,30 +13,30 @@ import "../utils/css/screen.css"
 
 const TagIndex = ({ data }) => {
   const siteTitle = data.site.siteMetadata.title
-  const posts = data.allMarkdownRemark.edges
+  const tags = data.allMarkdownRemark.distinct
 
   return (
     <Layout title={siteTitle}>
       <SEO
         title="Tags"
-        keywords={[`devlog`, `blog`, `gatsby`, `javascript`, `react`]}
       />
-      {/* {data.site.siteMetadata.description && (
-        <header className="page-head">
-          <h2 className="page-head-title">
-            {data.site.siteMetadata.description}
-          </h2>
-        </header>
-      )} */}
-      <div className="post-feed">
-      {posts.map(({ node }) => {
-          
-          return (
-            node.frontmatter.tags
-              
-          )
-        })}
-      </div>
+      <header className="tag-page-head">
+          <h1 className="page-head-title">Tags({tags.length})</h1>
+      </header>
+      <div className="tag-container">
+        {tags.map( tag => {
+          return(
+            <div className="tag-box">
+              <Link className="post-card-tag-link"
+              key={tag}
+              // style={{ textDecoration: "none" }}
+              to={`/tags/${_.kebabCase(tag)}`}
+              >
+              #{tag}
+              </Link>
+            </div>)
+          })}
+        </div>
     </Layout>
   )
 }
@@ -46,28 +48,8 @@ const indexQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "MMMM D, YYYY")
-            title
-            description
-            tags
-            thumbnail {
-              childImageSharp {
-                fluid(maxWidth: 1360) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-        }
-      }
+    allMarkdownRemark {
+      distinct(field: frontmatter___tags)
     }
   }
 `
