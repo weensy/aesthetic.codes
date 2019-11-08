@@ -788,8 +788,14 @@ body {
     margin: 0 auto;
 }
 
-.tag-box {
-    /* flex: 1 1 auto; */
+.tag-item {
+    flex: 1 1 auto;
+    margin: 0.7vw;
+    padding: 0.3vw;
+    background-color: var(--color-bg-bright);
+    color: var(--color-sub-base);
+    font-size: 2rem;
+    line-height: 1em;
 }
 
 .tag-page-head {
