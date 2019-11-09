@@ -26,15 +26,14 @@ const TagIndex = ({ data }) => {
       <div className="tag-container">
         {tags.map( tag => {
           return(
-            <div className="tag-box">
-              <Link className="post-card-tag-link"
+              <Link
               key={tag}
-              // style={{ textDecoration: "none" }}
+              style={{ textDecoration: "none" }}
               to={`/tags/${_.kebabCase(tag)}`}
               >
-              #{tag}
+              <div className="tag-box">#{tag}</div>
               </Link>
-            </div>)
+            )
           })}
         </div>
     </Layout>

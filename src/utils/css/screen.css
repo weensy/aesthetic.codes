@@ -789,7 +789,7 @@ body {
 }
 
 .tag-box {
-    /* flex: 1 1 auto; */
+    background-color: var(--color-bg-bright);
 }
 
 .tag-page-head {
