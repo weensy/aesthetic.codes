@@ -5,7 +5,6 @@ import { graphql, StaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import PostCard from "../components/postCard"
 
 // import "../utils/global.scss"
 import "../utils/normalize.css"
@@ -14,7 +13,7 @@ import "../utils/css/screen.css"
 const TagIndex = ({ data }) => {
   const siteTitle = data.site.siteMetadata.title
   const tags = data.allMarkdownRemark.distinct
-
+  
   return (
     <Layout title={siteTitle}>
       <SEO
@@ -31,7 +30,11 @@ const TagIndex = ({ data }) => {
               style={{ textDecoration: "none" }}
               to={`/tags/${_.kebabCase(tag)}`}
               >
+<<<<<<< HEAD
               <div className="tag-box">#{tag}</div>
+=======
+              <div className="tag-item">#{tag}</div>
+>>>>>>> b8d40ce19265602bb97b52e12be1a2f431e6c324
               </Link>
             )
           })}
