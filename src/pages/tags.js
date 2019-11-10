@@ -30,11 +30,7 @@ const TagIndex = ({ data }) => {
               style={{ textDecoration: "none" }}
               to={`/tags/${_.kebabCase(tag)}`}
               >
-<<<<<<< HEAD
-              <div className="tag-box">#{tag}</div>
-=======
               <div className="tag-item">#{tag}</div>
->>>>>>> b8d40ce19265602bb97b52e12be1a2f431e6c324
               </Link>
             )
           })}

@@ -788,10 +788,6 @@ body {
     margin: 0 auto;
 }
 
-<<<<<<< HEAD
-.tag-box {
-    background-color: var(--color-bg-bright);
-=======
 .tag-item {
     flex: 1 1 auto;
     margin: 0.7vw;
@@ -800,7 +796,6 @@ body {
     color: var(--color-sub-base);
     font-size: 2rem;
     line-height: 1em;
->>>>>>> b8d40ce19265602bb97b52e12be1a2f431e6c324
 }
 
 .tag-page-head {
