@@ -531,7 +531,7 @@ body {
     }
 }
 @media (max-width: 940px) {
-    .post-card.no-image .post-card-date,
+    /* .post-card.no-image .post-card-date, */
     .post-card.no-image .post-card-body,
     .post-card.no-image .post-card-readmore{
         display: none;
@@ -541,14 +541,14 @@ body {
     .post-card.no-image:before {
         font-size: 50vw;
     }
-    .post-card.no-image .post-card-date,
+    /* .post-card.no-image .post-card-date, */
     .post-card.no-image .post-card-body,
     .post-card.no-image .post-card-readmore{
         display: block;
     }
 }
 @media (max-width: 430px) {
-    .post-card.no-image .post-card-date,
+    /* .post-card.no-image .post-card-date, */
     .post-card.no-image .post-card-body,
     .post-card.no-image .post-card-readmore{
         display: none;
