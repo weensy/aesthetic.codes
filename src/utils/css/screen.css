@@ -791,11 +791,19 @@ body {
 .tag-item {
     flex: 1 1 auto;
     margin: 0.7vw;
-    padding: 0.3vw;
+    padding: 0.5vw;
     background-color: var(--color-bg-bright);
     color: var(--color-sub-base);
     font-size: 2rem;
     line-height: 1em;
+}
+
+@media (max-width: 700px) {
+    .tag-item {
+        font-size: 2rem;
+        margin: 1.4vw;
+        padding: 1vw;
+    }
 }
 
 .tag-page-head {
