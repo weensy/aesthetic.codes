@@ -25,7 +25,8 @@ production stylesheet in assets/built/screen.css using gulp dev
 /* ---------------------------------------------------------- */
 
 body {
-    font-family: 'Muli', sans-serif;
+    /* font-family: 'Muli', sans-serif; */
+    font-family: var(--font-sans-serif);
     background: var(--color-bg);
     transition: background 0.3s ease-out;
     transition-delay: 0.25;
@@ -342,7 +343,8 @@ body {
     }
 
     .site-head-open {
-        background: rgba(255,255,255,1);
+        /* background: rgba(255,255,255,1); */
+        background: var(--color-bg);
         transition: background 0.5s ease-out;
         transition-delay: 0.25;
         overflow: hidden;
@@ -391,21 +393,19 @@ body {
 
 .post-feed {
     display: flex;
-    align-items: ;
+    align-items: center;
     flex-wrap: wrap;
-}
-
-.post-list {
-    flex: 1 1 100%;
+    
 }
 
 .post-card {
     position: relative;
     flex: 1 1 50%;
     display: flex;
-    position: relative;
     height: 35vw;
-    background: linear-gradient(135deg, #1f1f1f 0%, #111 100%) center center;
+    /* background: linear-gradient(135deg, #1f1f1f 0%, #111 100%) center center; */
+    /* based #1d1d1f */
+    background: linear-gradient(135deg, #242426 0%, #161618 100%) center center;
     background-size: cover;
     overflow: hidden;
     counter-increment: posts;
@@ -437,10 +437,31 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    color: #fff;
+    color: var(--color-base);
     background: rgba(0,0,0,0.1);
     opacity: 1;
     transition: opacity 0.5s cubic-bezier(.33,0,.2,1);
+}
+
+.post-card-date,
+.post-card-body,
+.post-card-tag-link {
+    font-size: 1.6rem;
+    color: var(--color-sub-base);
+}
+
+.post-card-readmore {
+    margin-top: 11.2px;
+    font-size: 1.6rem;
+}
+
+.post-card-body {
+    margin-top: 16.8px;
+}
+
+.post-card-date {
+    margin-top: 10px;
+    font-style: italic;
 }
 
 .post-card.with-image .post-card-content {
@@ -461,7 +482,7 @@ body {
     margin: 0;
     display: inline-block;
     font-size: 3.4rem;
-    max-width: 70%;
+    /* max-width: 70%; */
     text-align: center;
     transition: all 0.3s cubic-bezier(.33,0,.2,1);
 }
@@ -484,12 +505,14 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
     padding: 4vw;
+    flex-direction: column;
 }
 
 .post-card.no-image .post-card-title {
     font-size: 5rem;
     line-height: 1.15em;
     text-align: left;
+    color: var(--color-base);
 }
 
 .post-card.no-image:hover .post-card-title {
@@ -500,10 +523,35 @@ body {
     .post-card.no-image .post-card-title {
         font-size: 3.4rem;
     }
+    .post-card.no-image .post-card-date,
+    .post-card.no-image .post-card-body,
+    .post-card.no-image .post-card-readmore,
+    .post-card.no-image .post-card-tag-link{
+        font-size: 1.4rem;
+    }
+}
+@media (max-width: 940px) {
+    /* .post-card.no-image .post-card-date, */
+    .post-card.no-image .post-card-body,
+    .post-card.no-image .post-card-readmore{
+        display: none;
+    }
 }
 @media (max-width: 700px) {
     .post-card.no-image:before {
         font-size: 50vw;
+    }
+    /* .post-card.no-image .post-card-date, */
+    .post-card.no-image .post-card-body,
+    .post-card.no-image .post-card-readmore{
+        display: block;
+    }
+}
+@media (max-width: 430px) {
+    /* .post-card.no-image .post-card-date, */
+    .post-card.no-image .post-card-body,
+    .post-card.no-image .post-card-readmore{
+        display: none;
     }
 }
 
@@ -586,7 +634,8 @@ body {
 .post-content-body blockquote {
     margin: 0 0 1.5em;
     padding: 0 1.5em;
-    border-left: #3eb0ef 3px solid;
+    /* border-left: #3eb0ef 3px solid; */
+    border-left: var(--color-primary) 3px solid;
 }
 
 .post-content-body blockquote p {
@@ -605,9 +654,10 @@ body {
     padding: 0 5px 2px;
     font-size: 0.8em;
     line-height: 1em;
-    font-weight: 400!important;
-    background: var(--color-bg);
-    border-radius: 3px;
+    font-weight: 400 !important;
+    /* background: var(--color-bg); */
+    background: var(--color-bg-dark) !important;
+    border-radius: 3px !important;
 }
 
 .post-content-body p code {
@@ -619,11 +669,14 @@ body {
     margin: 1.5em 0 3em;
     padding: 20px;
     max-width: 100%;
-    border: color(var(--color-base) l(-10%)) 1px solid;
-    color: var(--color-bg);
+    /* border: color(var(--color-base) l(-10%)) 1px solid; */
+    border: color(var(--color-bg-bright) l(-0%)) 1px solid !important; 
+    /* color: var(--color-bg); */
+    color: var(--color-base);
     font-size: 1.4rem;
     line-height: 1.5em;
-    background: color(var(--color-base) l(-3%));
+    /* background: color(var(--color-base) l(-3%)); */
+    background: var(--color-bg-dark) !important;
     border-radius: 5px;
 }
 
@@ -721,5 +774,45 @@ body {
 .page-template .post-content-body h1,
 .page-template .post-content-body h2,
 .page-template .post-content-body h3 {
+    text-align: center;
+}
+
+/* Tag Pages
+/* ---------------------------------------------------------- */
+
+.tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.tag-item {
+    flex: 1 1 auto;
+    margin: 0.7vw;
+    padding: 0.5vw;
+    background-color: var(--color-bg-bright);
+    color: var(--color-sub-base);
+    font-size: 2rem;
+    line-height: 1em;
+}
+
+@media (max-width: 700px) {
+    .tag-item {
+        font-size: 2rem;
+        margin: 1.4vw;
+        padding: 1vw;
+    }
+}
+
+.tag-page-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6vw 0;
+    max-width: 70%;
+    margin: auto;
     text-align: center;
 }

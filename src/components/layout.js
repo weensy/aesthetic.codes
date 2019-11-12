@@ -26,18 +26,18 @@ const Layout = props => {
           </a>
           <nav id="swup" class="site-head-left">
             <ul className="nav" role="menu">
-              <li className="nav-home nav-current" role="menuitem">
+              {/* <li className="nav-home nav-current" role="menuitem">
                 <Link to={`/`}>Home</Link>
-              </li>
-              <li className="nav-testpage" role="menuitem">
-                <Link to={`/testpage`}>Testpage</Link>
-              </li>
+              </li> */}
               {/* <li className="nav-about" role="menuitem">
                 <Link to={`/about`}>About</Link>
-              </li>
-              <li className="nav-elements" role="menuitem">
+              </li> */}
+              {/* <li className="nav-elements" role="menuitem">
                 <Link to={`/elements`}>Elements</Link>
               </li> */}
+              <li className="nav-tags" role="menuitem">
+                <Link to={`/tags`}>Tags</Link>
+              </li>
             </ul>
           </nav>
           <div className="site-head-center">

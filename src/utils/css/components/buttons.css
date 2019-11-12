@@ -96,7 +96,8 @@ input[type="reset"].primary,
 input[type="button"].primary,
 button.primary,
 .button.primary {
-    color: #fff !important;
+    /* color: #fff !important; */
+    color: var(--color-base) !important;
     background-color: var(--color-primary);
     box-shadow: none;
 }

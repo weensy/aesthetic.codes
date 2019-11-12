@@ -1,5 +1,6 @@
 ---
 title: "What is Ajax?"
+date: "2019-09-17"
 tags: [javascript,ajax,asynchronous]
 ---
 
