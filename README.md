@@ -6,9 +6,9 @@
 </p>
 
 <h1 align="center">
-  Darkside of London
+  London After Midnight
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/vaporwavy/gatsby-darkside-of-london)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/vaporwavy/gatsby-london-after-midnight)
 
 </h1>
 
@@ -18,17 +18,17 @@ A custom, image-centric theme for Gatsby. Made for publishers and portfolios wit
 
 **Based on [London](https://github.com/ImedAdel/gatsby-london) for Gatsby**
 
-**Demo: https://gatsby-dol.vaporwavy.io**
-
-<p align="center">
-  <a href="https://gatsby-dol.vaporwavy.io">
-    <img alt="Gatsby" src="./content/assets/screenshot-desktop.jpg" />
-  </a>
-</p>
+**Demo: https://gatsby-lam.vaporwavy.io**
 
 ---
 
-_I haven't really spent any time adding the JS animations or removing any unused CSS (automatically done by PurgeCSS). You will also need HTML in your Markdown file in order to add CSS classes to your images_
+### What is different from London?
+* Support Tag
+* Full Recoloring for Dark themes
+* Highlight Syntax with Prism.js
+* Support Korean and Japanese
+* Parameterize All Colors
+* Change the Format of Thumbnailless Postcards
 
 ---
 
@@ -42,7 +42,7 @@ _First time with Gatsby? Take a look on the [official and community-created star
 
     ```sh
     # create a new Gatsby site using the blog starter
-    npx gatsby new my-awesome-portfolio https://github.com/vaporwavy/gatsby-darkside-of-london
+    npx gatsby new my-awesome-portfolio https://github.com/vaporwavy/gatsby-london-after-midnight
     ```
 
 1.  **Start developing.**
