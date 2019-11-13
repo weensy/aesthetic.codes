@@ -1,7 +1,8 @@
 ---
-title: Darkside of London - Gatsby starter
+title: London After Midnight - Gatsby Starter
 date: "2019-11-05"
 tags: [gatsby,starter,london]
+description: The theme of this blog. This is built with Gatsby.
 ---
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
@@ -11,9 +12,8 @@ tags: [gatsby,starter,london]
 </p>
 
 <h1 align="center">
-  Darkside of London
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/vaporwavy/gatsby-darkside-of-london)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/vaporwavy/gatsby-london-after-midnight)
 
 </h1>
 
@@ -23,17 +23,17 @@ A custom, image-centric theme for Gatsby. Made for publishers and portfolios wit
 
 **Based on [London](https://github.com/ImedAdel/gatsby-london) for Gatsby**
 
-**Demo: https://gatsby-dol.vaporwavy.io**
-
-<p align="center">
-  <a href="https://gatsby-dol.vaporwavy.io">
-    <img alt="Gatsby" src="./content/assets/screenshot-desktop.jpg" />
-  </a>
-</p>
+**Demo: https://gatsby-lam.vaporwavy.io**
 
 ---
 
-_I haven't really spent any time adding the JS animations or removing any unused CSS (automatically done by PurgeCSS). You will also need HTML in your Markdown file in order to add CSS classes to your images_
+### What is different from London?
+* Support Tag
+* Full Recoloring for Dark themes
+* Highlight Syntax with Prism.js
+* Support Korean and Japanese
+* Parameterize All Colors
+* Change the Format of Thumbnailless Postcards
 
 ---
 
@@ -45,17 +45,17 @@ _First time with Gatsby? Take a look on the [official and community-created star
 
     Use `npx` and the Gatsby CLI to create a new project
 
-    ```bash
+    ```sh
     # create a new Gatsby site using the blog starter
-    npx gatsby new my-awesome-blog https://github.com/vaporwavy/gatsby-darkside-of-london
+    npx gatsby new my-awesome-portfolio https://github.com/vaporwavy/gatsby-london-after-midnight
     ```
 
 1.  **Start developing.**
 
     Navigate into your new site’s directory and start it up.
 
-    ```bash
-    cd my-awesome-blog/
+    ```sh
+    cd my-awesome-portfolio/
     gatsby develop
     ```
 
@@ -65,6 +65,6 @@ _First time with Gatsby? Take a look on the [official and community-created star
 
     _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
 
-    Open the `my-awesome-blog` directory in your code editor of choice and edit `content/blog/`. Save your changes and the browser will update in real time!
+    Open the `my-blog-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
 <!-- AUTO-GENERATED-CONTENT:END -->
