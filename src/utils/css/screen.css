@@ -789,6 +789,7 @@ body {
   color: var(--color-sub-base);
   font-size: 2rem;
   line-height: 1em;
+  white-space: nowrap;
 }
 
 .tag-item:hover {
@@ -802,7 +803,6 @@ body {
     font-size: 2rem;
     margin: 1.4vw;
     padding: 1vw;
-    white-space: nowrap;
   }
 }
 
