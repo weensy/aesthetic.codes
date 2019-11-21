@@ -802,6 +802,7 @@ body {
     font-size: 2rem;
     margin: 1.4vw;
     padding: 1vw;
+    white-space: nowrap;
   }
 }
 
