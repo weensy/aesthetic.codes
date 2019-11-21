@@ -18,12 +18,17 @@ tags: [css, priority, rule]
     text-align: center;
     border: 0 !important;
   }
+  div .scrll {
+    width: 100%;
+    overflow: auto;
+  }
 </style>
 
 ### Calculating Specificity Of Selector Expression
 
 A selector expression is a selector or a combination of selectors.
 
+<div class="scrll">
 <table>
   <thead>
     <tr>
@@ -51,4 +56,5 @@ A selector expression is a selector or a combination of selectors.
     </tr>
   </tbody>
 </table>
+</div>
 <p style="margin: 1.5em 0;">For every selector expression we get a five digit priority value from the above diagram. Larger values override smaller values. Same values override based on top to bottom(last selector expression overrides previous ones).</p>
