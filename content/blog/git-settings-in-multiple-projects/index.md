@@ -1,5 +1,5 @@
 ---
-title: Note on working with multiple projects in Git
+title: Git settings in multiple projects
 date: "2019-11-22"
 tags: [git, setting, note]
 ---
@@ -20,4 +20,4 @@ Here is how to give setting to each individual project.
 git config --local [key] [value]
 ```
 
-Of course, the priority is local> global, so if exist a local value, use that; if not, use global.
+Of course, the priority is local> global, so if exist a local value, used that; if not, use global.
