@@ -36,7 +36,7 @@ It shows the ranking by counting the number of searches for a keyword in real ti
 Naver is constantly receiving allegations of manipulation of this real-time search term.
 But I won't mention this because it's not clear.  
 Naver describes the real-time terms search service as "The purpose of the service is to aggregate the frequency of searches by a large number of users and show the trend of opinion as it is."
-Recently, however, real-time search terms are dominated by advertisements as companies are conducting real-time search terms marketing.
+However, in recent years, real-time search terms are dominated by advertisements as companies conduct 'real-time search terms marketing'.
 
 > Real-time search terms marketing  
 > : It is marketing that benefits customers who searched a specific keyword in Naver at a certain time.
