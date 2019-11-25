@@ -49,4 +49,4 @@ As a result, distorted information is being delivered to users who want to know 
 Kakao merges with daum and gradually regains its position as a portal.
 ~~This is also messy. Because it uses the strategy of tying daum on KakaoTalk.~~
 Nevertheless, if Naver is distracted and continues this downturn, Naver may give Daum a first place again.
-(In fact, this first place in Korea is meaningless. Because everybody is going to go to Google.)
+(In fact, this first place in Korea is meaningless, because everybody is going to go to Google.)
