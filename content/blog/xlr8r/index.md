@@ -17,7 +17,7 @@ It provides several functions for documentation in Excel.
 ## Installation
 
 Click
-<a href="https://github.com/vaporwavy/xlr8r/archive/v1.0.1.zip" target="_blank">here</a> to download the latest version.  
+<a href="https://github.com/vaporwavy/xlr8r/archive/v1.0.2.zip" target="_blank">here</a> to download the latest version.  
 Otherwise, go to the <a href="https://github.com/vaporwavy/xlr8r/releases" target="_blank">releases page</a>, download version what you want.  
 Then unzip it, and execute XLR8R_Install.vbs. That's it. Now you can use XLR8R in Excel.
 
