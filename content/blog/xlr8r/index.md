@@ -13,11 +13,12 @@ It provides several functions for documentation in Excel.
 - Select Objects
 - Highlighter
 - Copy as Bitmap
+- Switch sheet
 
 ## Installation
 
 Click
-<a href="https://github.com/vaporwavy/xlr8r/archive/v1.0.2.zip" target="_blank">here</a> to download the latest version.  
+<a href="https://github.com/vaporwavy/xlr8r/archive/v1.1.0.zip" target="_blank">here</a> to download the latest version.  
 Otherwise, go to the <a href="https://github.com/vaporwavy/xlr8r/releases" target="_blank">releases page</a>, download version what you want.  
 Then unzip it, and execute XLR8R_Install.vbs. That's it. Now you can use XLR8R in Excel.
 
@@ -50,11 +51,21 @@ Copy to clipboard as image of selected range or objects.
 
 > Default keybind: <code class="language-text" style="font-style: normal;">Ctrl + Shift + C</code>
 
+### Switch sheet
+
+- Switch to the first sheet.
+
+> Default keybind: <code class="language-text" style="font-style: normal;">Ctrl + Alt + Home</code>
+
+- Switch to the last sheet.
+
+> Default keybind: <code class="language-text" style="font-style: normal;">Ctrl + Alt + End</code>
+
 ## Customization
 
 You can customize on Preference Settings. Press `Ctrl + Shift + P` to open Preference Settings.
 ![Preference Settings](./PS.png)
-You can change keybindings, modes, and settings.
+You can change keybindings, languages, modes, and settings.
 
 ## Contributing
 
