@@ -14,3 +14,7 @@ GQL(GraphQL) is a query language for your API, and a server-side runtime for exe
 - GitHub
 - Pinterest
 - Etc.
+
+### Documents
+
+https://graphql.org/learn/
