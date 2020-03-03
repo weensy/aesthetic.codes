@@ -16,6 +16,10 @@ tags: [design, icon, logo]
 
 ![icon-v3](./icon-v3.png)
 
+## V4
+
+![icon-v4](./icon-v4.png)
+
 ## How did I make it?
 
 This is capture image of typed letters on VS Code. I just type logo in VS Code, and take a screenshot.
