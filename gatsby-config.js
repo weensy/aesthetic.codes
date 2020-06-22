@@ -98,5 +98,21 @@ module.exports = {
     `gatsby-plugin-netlify`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `@gatsby-contrib/gatsby-plugin-elasticlunr-search`,
+      options: {
+        fields: [`title`, `tags`, `description`],
+        resolvers: {
+          MarkdownRemark: {
+            title: node => node.frontmatter.title,
+            tags: node => node.frontmatter.tags,
+            description: node => node.frontmatter.description,
+            slug: node => node.fields.slug,
+          },
+        },
+        // filter: (node, getNode) =>
+        //   node.frontmatter.tags !== 'exempt',
+      },
+    },
   ],
 }

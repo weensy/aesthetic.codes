@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import Searcher from "./searcher"
 
 const Layout = props => {
   const { title, children } = props
