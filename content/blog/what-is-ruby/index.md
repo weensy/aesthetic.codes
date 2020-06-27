@@ -18,7 +18,7 @@ So I became interested in the language Ruby, and I want to find out about it.
 - Script language(: A language used to control existing software. Ex; JavaScript, Python...)
 - All APIs are written in Japanese.
 
-<del> I thought, “Why are there so many places in Japan that use ruby?”, and this seems to be the reason. </del>
+<del> I thought, 'Why are there so many places in Japan that use ruby?', and this seems to be the reason. </del>
 
 ## Ruby on Rails
 
@@ -27,3 +27,4 @@ So I became interested in the language Ruby, and I want to find out about it.
 - So easy to learn
 - Pure object-oriented language
 - [Meta programmable](https://en.wikipedia.org/wiki/Metaprogramming)
+- This framework is what made Ruby famous
